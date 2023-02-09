@@ -1,0 +1,128 @@
+{% load static %}
+
+p {
+    margin-bottom: 0 !important;
+}
+.navbar{
+  padding-top: 0!important;
+  margin-top: 0!important;
+}
+.nav-link:hover{
+  border-bottom: 2px solid yellow;
+  transition: all 0.4s ease;
+  color:white!important;
+  font-weight: 700!important;
+}
+header {
+  background-image: url("/static/pictures/header_bg.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height:530px;
+  object-fit: cover;
+  }
+
+  .data-row{
+    margin-top:20px;
+    padding: 20px;
+    background-color: white;
+    min-height: 300px;
+  }
+  .data-row-top{
+    margin-top:-200px;
+    padding: 20px;
+    background-color: white;
+    min-height: 300px;
+  }
+
+footer {
+  background-image: url("/static/pictures/footer_bg.png");
+  background-size: 100% 101%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  color: white;
+  }
+  .line{
+    border-top:1px solid white;
+    padding: 10px 0;
+  }
+  .round-img{
+  border-radius:35px;
+  }
+
+ul{
+ list-style:none;
+}
+  ul li a{
+    text-decoration:none;
+  }
+.text-link a{
+    color:black;
+    font-size: 14px;
+    text-align: center;
+}
+.text-link a:hover{
+    color:black;
+}
+ .card-deck {
+          margin-top: 100px; }
+ .card-deck .card {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 253, 246, 0.99);
+            padding: 2rem 2rem;
+            box-shadow: 0 15px 25px rgba(80, 80, 80, 0.1);
+            transition: all 0.4s ease;
+            }
+
+
+
+ .card-deck .card:hover {
+              transform: scale(1.1);
+              box-shadow: 0 15px 25px rgba(80, 80, 80, 0.1);
+              cursor: pointer;
+            }
+ .card-deck .card img {
+              position: absolute;
+              top: -80px;
+              left: 70px; }
+
+.footer-a{
+  text-decoration: none;
+  font-weight: 700;
+}
+.footer-a:hover{
+ color:white;
+ text-decoration: none;
+}
+@media only screen and (max-width: 450px) {
+    footer {
+        background-size: 150% 101%;
+    }
+                 .card-deck  .card {
+                  margin-bottom: 100px!important;
+                  width: 370px!important;
+                  height: 220px!important;
+                  background: rgba(255, 253, 246, 0.99);
+                  padding: 2rem 2rem;
+                  box-shadow: 0 15px 25px rgba(80, 80, 80, 0.1);
+                  transition: all 0.4s ease;
+
+                  }
+                   .card-deck  .card:hover {
+                    transform: scale(1.1);
+                    box-shadow: 0 15px 25px rgba(80, 80, 80, 0.1);
+                  }
+                   .card-deck  .card img {
+                   width: 150px!important;
+                    position: absolute;
+                    top: -80px;
+                    left: 120px!important;
+                  }
+
+                  .text-link{
+                    margin-top: -40px!important;
+                    padding-bottom: 20px!important;
+                  }
+
+  }

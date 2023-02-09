@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row py-3">
+    <div class="col-md-12 text-center items-center justify-center">
+<div class="data-row-top" style="background-color: #EEEEEE;">
+    <h3>{{ yangilik.title }}</h3>
+    {% if yangilik.photo %}
+    <img class=" card-img-top w-75" src="{{ yangilik.photo.url }}" alt="{{ yangilik.title }}">
+    {% endif %}
+    <p style="text-align: left; text-indent: 20px;">{{ yangilik.body }}</p>
+</div>
+</div>
+</div>
+
+
+{% endblock content %}

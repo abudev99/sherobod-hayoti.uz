@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="row data-row" style="background-color: #EEEEEE;">
+    <div class="col-md-8 col-12 col-sm-12">
+        <div class="row">
+            <div class="col-md-12 col-12 col-sm-12">
+                <div style="border-bottom:3px solid gray">
+                    <h4 class="text-secondary font-weight-bold">GAZETA NASHRLARI</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            {% for gazeta in newspapers %}
+            <div class="col-md-4  items-center text-center pb-2">
+                <div class="bg-white py-2">
+                    <div class="post-entry">
+                            <h6><a href="{% url 'post_detail' gazeta.pk %}"> {{ gazeta.title }}</a></h6>
+                    </div>
+                    <div class="o-h">
+                    {% if gazeta.photo %}
+                    <a href="{% url 'post_detail' gazeta.pk %}">
+                    <img class=" card-img-top" style="width: 200px;" src="{{ gazeta.photo.url }}" alt="{{ gazeta.title }}">
+                </a>
+                    {% endif %}
+                    </div>
+                </div>
+                </div>
+                {% endfor %}
+                </div>
+            </div>
+    <div class="col-md-4 col-12 col-sm-12">
+        <div class="row">
+            <div class="col-md-12 col-12 col-sm-12">
+                <div style="border-bottom:3px solid gray">
+                    <h4 class="text-secondary font-weight-bold">YANGILIKLAR</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md-12 col-12 col-sm-12">
+                {% for yangilik in news %}
+                <ul class="popular ul">
+                    <li><h5><a href="{% url 'news_detail' yangilik.pk %}"> {{ yangilik.title }}</a></h5>
+                    <p class="text-success">{{ yangilik.date }}</p>
+                    </li>
+                </ul>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock content %}

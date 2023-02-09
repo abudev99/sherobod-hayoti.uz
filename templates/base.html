@@ -1,0 +1,233 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/socialBtn.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Sherobod Gazeta</title>
+</head>
+<body class="bg=warning">
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="{% url 'home'  %}">Sherobod hayoti </a>
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#raxbariyat">Raxbariyat</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#faoliyat">Faoliyat</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#xujjatlar">Xujjatlar</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#connect">Bog'lanish</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+</header>  
+<div class="container">
+    {% block content %}
+    {% endblock content%}
+    <div class="sixth-section">
+        <div class="row">
+            <div class="col-md-12 text-center pt-3">
+                <h2><b>Bizning jamoa</b></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-12 offset-md-1">
+                            <div class="card-deck">
+                                <div class="card text-center border-0">
+                                    <img src="/static/pictures/parda.jpg" class="img-fluid w-50 round-img" alt="">
+                                    <div class="mt-5">
+                                        <h5><b>Muhammadiyev Parda Shermurodovich</b></h5>
+                                        <small class="text-danger">Gazeta bosh muharriri</small>
+                                    </div>
+                                </div>
+                                <div class="card  text-center border-0">
+                                    <img src="/static/pictures/sherali.jpg" class="img-fluid w-50 round-img" alt="">
+                                    <div class="mt-5">
+                                        <h5><b>Aliyorov Sherali Po'latovich</b></h5>
+                                        <small class="text-danger">Kompyuter sahifalovchi dizayner</small>
+                                    </div>
+
+                                </div>
+                                <div class="card text-center border-0">
+                                    <img src="/static/pictures/maftuna.jpg" class="img-fluid w-50 round-img" alt="">
+                                    <div class="mt-5">
+                                        <h5><b>Aromiddinova Maftuna Baxodirovna</b></h5>
+                                        <small class="text-danger">Gazeta Muxbiri</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+    <div class="row text-link my-5" style="background-color: #EEEEEE;">
+        <a class="col-xs-6 col-sm-4 col-md-2 pt-3" href="https://www.gov.uz/" target="_blank"><img
+                src="/static/pictures/link2.png" style="width:65px; padding-bottom:15px;" alt="media"><br><span>O`zbekiston Respublikasi hukumat portali</span></a><a
+            class="col-xs-6 col-sm-4 col-md-2" href="https://my.gov.uz/" target="_blank"><img
+            src="/static/pictures/link1.png"
+            alt="media"><br><span>Yagona interaktiv davlat xizmatlari portali</span></a><a
+            class="col-xs-6 col-sm-4 col-md-2" href="http://strategy.gov.uz/" target="_blank"><img
+            src="/static/pictures/link3.png" alt="media"><br><span>Harakatlar strategiyasi</span></a><a
+            class="col-xs-6 col-sm-4 col-md-2" href="https://data.gov.uz/" target="_blank"><img
+            src="/static/pictures/link4.png"
+            alt="media"><br><span>O'zbekiston Respublikasi ochiq ma'lumotlar portali</span></a><a
+            class="col-xs-6 col-sm-4 col-md-2 pt-1" href="https://id.egov.uz/" target="_blank"><img
+            src="/static/pictures/link6.png" alt="media"><br><span>Identifikatsiyalashning Yagona Tizimi</span></a><a
+            class="col-xs-6 col-sm-4 col-md-2" href="https://lex.uz/" target="_blank"><img
+            src="/static/pictures/link7.png" alt="media"><br><span>O‘zbekiston Qonun hujjatlari maʼlumotlari milliy bazasi</span></a>
+    </div>
+       </div>
+<footer>
+    <div class="container pt-5">
+        <div class="row pt-5">
+            <div class="col-md-4">
+                Bizning ijtimoiy tarmoqlarimiz
+                <div class="buttons">
+                    <div class="row">
+                        <button class="facebook">
+                            <span><i class="fab fa-facebook-f"></i></span>
+                            Facebook
+                        </button>
+                        <button class="instagram">
+                            <span><i class="fab fa-instagram"></i></span>
+                            Instagram
+                        </button>
+                    </div>
+                    <div class="row">
+                        <button class="twitter">
+                            <span><i class="fab fa-telegram"></i></span>
+                            <a href="https://t.me/sherobod_gazetasi" style="text-decoration: none; color: white;">Telegram</a>
+                        </button>
+                        <button class="youtube">
+                            <span><i class="fab fa-youtube"></i></span>
+                            YouTube
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 ">
+                <ul>
+                    <li>Gazeta Faoliyati</li>
+                    <li>Hizmatlar</li>
+                    <li>Mutaxassislar uchun</li>
+                </ul>
+            </div>
+            <div class="col-md-4 offset-md-2">
+                <ul>
+                    <li><b>Manzil:</b> Surxondaryo viloyat, Sherobod tuman, Taroqli mahalla</li>
+                    <li><b>Telefon:</b><a href="tel:+998992141445" class="footer-a"> (99) 214 14 45</a></li>
+                    <li><b>Pochta:</b><a href="mailto:Sherobod_gazeta@inbox.uz"class="footer-a"> Sherobod_gazeta@inbox.uz</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-12 line text-center pt-1">
+                <p style="color:lightgrey;">Surxondaryo viloyati sherobod Hayoti gazetasi taxhririyati | 2023 yil</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+ <!-- Modal -->
+ <div class="modal fade" id="raxbariyat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="raxbariyat">Sherobod hayoti gazetasi Raxbariyati</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ma'lumotlar yozish uchun joy .....
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="xujjatlar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="xujjatlar">Sherobod hayoti gazetasida uchun kerakli xujjatlar</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ma'lumotlar yozish uchun joy .....
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="faoliyat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="faoliyat">Sherobod hayoti gazetasi Faoliyati haqida</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ma'lumotlar yozish uchun joy .....
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="connect" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="connect">Sherobod hayoti gazetasi bilan bog'lanish uchun</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ma'lumotlar yozish uchun joy .....
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

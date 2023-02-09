@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row py-3">
+<div class="col-md-12 text-center items-center justify-center">
+<div class="data-row-top" style="background-color: #EEEEEE;">
+    <h3>{{ gazeta.title }}</h3>
+    {% if gazeta.photo %}
+    <img class=" card-img-top " src="{{ gazeta.photo.url }}" alt="{{ gazeta.title }}">
+    {% endif %}
+    <p>{{ gazeta.body}}</p>
+</div>
+</div>
+</div>
+{% endblock content %}
